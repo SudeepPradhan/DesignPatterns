@@ -16,7 +16,7 @@ public class ProxyTable implements ITable {
 
 	@Override
 	public void addRow(IRow row, int rowNum) {
-		synchronized(ProxyTable.class)
+		synchronized(row)
 		{
 			table.addRow(row, rowNum);
 		}
@@ -24,7 +24,7 @@ public class ProxyTable implements ITable {
 
 	@Override
 	public void modifyRow(int rowNum, IRow row) {
-		synchronized(ProxyTable.class)
+		synchronized(getRow(rowNum))
 		{
 			table.modifyRow(rowNum, row);
 		}
