@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab14_2.UserController">
+   <children>
+      <Label layoutX="164.0" layoutY="14.0" prefHeight="50.0" prefWidth="247.0" text="User Information">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="namesList" layoutX="55.0" layoutY="130.0" prefHeight="205.0" prefWidth="490.0" />
+      <TextField fx:id="txtName" layoutX="55.0" layoutY="87.0" prefHeight="31.0" prefWidth="308.0" />
+      <Button fx:id="btnRemove" layoutX="411.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnRemoveClick" prefHeight="31.0" prefWidth="137.0" text="Remove" />
+      <Button fx:id="btnAdd" layoutX="397.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnAddClick" prefHeight="31.0" prefWidth="148.0" text="Add" />
+   </children>
+</AnchorPane>
