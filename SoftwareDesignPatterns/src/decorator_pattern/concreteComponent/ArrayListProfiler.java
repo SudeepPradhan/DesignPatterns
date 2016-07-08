@@ -7,33 +7,33 @@ import decorator_pattern.decorator.Profiler;
 
 public class ArrayListProfiler implements Profiler {
 
-	private ArrayList<Object> decorator;
+	private ArrayList<Object> objects;
 	public ArrayListProfiler(){
-		this.decorator = new ArrayList<Object>();
+		this.objects = new ArrayList<Object>();
 	}
 
 	@Override
 	public boolean add(Object e) {
 		Sleep();
-		return decorator.add(e);
+		return objects.add(e);
 	}
 
 	@Override
 	public boolean remove(Object o) {
 		Sleep();
-		return decorator.remove(o);
+		return objects.remove(o);
 	}
 
 	@Override
 	public boolean contains(Object o) {
 		Sleep();
-		return decorator.contains(0);
+		return objects.contains(0);
 	}
 
 	@Override
 	public int size() {
 		Sleep();
-		return decorator.size();
+		return objects.size();
 	}
 
 	public void Sleep()
